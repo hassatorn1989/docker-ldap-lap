@@ -27,7 +27,6 @@ return [
     */
 
     'connections' => [
-
         'default' => [
             'hosts' => [env('LDAP_HOST', '127.0.0.1')],
             'username' => env('LDAP_USERNAME', 'cn=user,dc=local,dc=com'),
@@ -38,6 +37,7 @@ return [
             'use_ssl' => env('LDAP_SSL', false),
             'use_tls' => env('LDAP_TLS', false),
             'use_sasl' => env('LDAP_SASL', false),
+            // 'version' => env('LDAP_VERSION', 3),
             'sasl_options' => [
                 // 'mech' => 'GSSAPI',
             ],
